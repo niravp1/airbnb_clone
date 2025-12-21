@@ -2,37 +2,39 @@
 <html>
 
 <head>
-    <title> Nobnb </title>
+    <title>Nobnb</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./app.js"></script>
 </head>
 
 <body>
-    <!--Top Level-->
-    <div class="flex flex-row justify-center">
-        <div class="fixed top-3 right-0 left-0">
-            <img class="w-58 top-6" src="./assets/nobnb.png">
+    <!--Header-->
+    <div class="flex justify-center">
+        <!--Hero-->
+        <div class="top-3 right-0 left-0 absolute pointer-events-none">
+            <img id="hero" class="w-58" src="./assets/nobnb.png" />
         </div>
-        <!-- Tab Bar Container -->
-        <div class="flex mt-3">
-            <div class="flex items-center pr-3">
+        <!--Tab Bar-->
+        <div class="flex mt-6">
+            <button class="flex items-center pr-3" onclick="myFunction()">
                 <img class="w-20 h-10"
                     src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg"
                     alt="home" />
                 <span class="pl-2"> Homes </span>
-            </div>
-            <div class="flex items-center p-3">
+            </button>
+            <button class="flex items-center pr-3" onclick="myFunction()">
                 <img class="w-20 h-10"
-                    src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg" />
-                <span class="pl-2"> Experiences </span>
-            </div>
-            <div class="flex items-center">
+                    src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg"
+                    alt="home" />
+                <span class="pl-2"> Homes </span>
+            </button>
+            <button class="flex items-center pr-3" onclick="myFunction()">
                 <img class="w-20 h-10"
-                    src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg" />
-                <span class="pl-2"> Services </span>
-            </div>
-        </div>
+                    src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg"
+                    alt="home" />
+                <span class="pl-2"> Homes </span>
+            </button>
 
 </body>
-
 
 </html>

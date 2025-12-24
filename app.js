@@ -1,12 +1,15 @@
 function myFunction() {
    window.location.href = 'test.html';
 }
-function goBack(){
+function goBack() {
    window.location.href = 'index.html';
 }
-function getData(){
-fetch('https://picsum.photos/v2/list')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch( error => console.error(error));
+async function getData() {
+   response = await fetch('https://picsum.photos/v2/list')
+   data = await response.json()
+   console.log(data[0])
+   loadImage(data[0].download_url)
+}
+function loadImage(url){
+   document.getElementById("test-image").setAttribute("src",url)
 }

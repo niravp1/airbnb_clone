@@ -7,9 +7,10 @@ function goBack() {
 async function getData() {
    response = await fetch('https://picsum.photos/v2/list')
    data = await response.json()
-   console.log(data[0])
-   loadImage(data[0].download_url)
-}
+   // use for loop to render 5 images then style them ; dynamically create new elements to do so
+   for (let i = 0; i < 5; i++){
+      loadImage(data[i].download_url)
+   } }
 function loadImage(url){
    document.getElementById("test-image").setAttribute("src",url)
 }

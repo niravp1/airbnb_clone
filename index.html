@@ -4,7 +4,6 @@
 <head>
     <title>Nobnb</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./app.js"></script>
 </head>
 
 <body>
@@ -42,20 +41,25 @@
         </div>
         <div class="flex justify-center">
             <div class="flex">
-                <div class="top-23 left-135 absolute">Where</div>
-                <div class="top-23 left-215 absolute">When</div>
+                <div class="top-23 left-125 absolute">Where</div>
+                <div class="top-23 left-185 absolute">When</div>
                 <div class="top-23 right-180 absolute">Who</div>
                 <input type="text" class="border-2 border-zinc-300 w-[850px] h-[66px] mt-6 rounded-[50px] shadow-xl" />
-                <button class="absolute w-8 h-8 right-133 top-26" onclick="myFunction()">
+                <button class="absolute w-8 h-8 right-120 top-26" onclick="myFunction()">
                     <img src="https://img.icons8.com/m_outlined/512/F25081/search.png">
                 </button>
             </div>
         </div>
     </div>
-    <div>
         <h1 class="p-3">Random photos from pexel b/c airbnb has a private api T_T</h1>
         <button onclick="getData()">test</button>
+    <!--Content-->
+    <div>
+        <!--Grid-->
+        <div id="grid-display" class="grid 6 rows 5 cols">
+        </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nobnb</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!--Styling Nav Bar-->
+    <div class="h-50 bg-stone-100">
+        <!--Header-->
+        <div class="flex justify-center">
+            <!--Hero-->
+            <div class="top-3 right-0 left-0 absolute pointer-events-none">
+                <img id="hero" class="w-58" src="./assets/nobnb.png" />
+            </div>
+            <!--Tab Bar-->
+            <div class="flex mt-6">
+                <button
+                    class="flex items-center pr-3 group after:h-1 after:w-34 after:ml-1 after:mt-15 after:absolute after:bg-black after:rounded-xs"
+                    onclick="myFunction()">
+                    <img class="w-20 h-10 transition group-hover:scale-120"
+                        src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg"
+                        alt="home" />
+                    <span class="pl-2"> Homes </span>
+                </button>
+                <button class="flex items-center pr-3 group" onclick="myFunction()">
+                    <img class="w-20 h-10 transition group-hover:scale-120"
+                        src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg"
+                        alt="home" />
+                    <span class="pl-2"> Experiences </span>
+                </button>
+                <button class="flex items-center pr-3 group" onclick="myFunction()">
+                    <img class="w-20 h-10 transition group-hover:scale-120"
+                        src=" https://hookedonhouses.net/wp-content/uploads/2011/07/Pixars-Up-house-with-picket-fence.jpg"
+                        alt="home" />
+                    <span class="pl-2"> Services </span>
+                </button>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="flex">
+                <div class="top-23 left-125 absolute">Where</div>
+                <div class="top-23 left-185 absolute">When</div>
+                <div class="top-23 right-180 absolute">Who</div>
+                <input type="text" class="border-2 border-zinc-300 w-[850px] h-[66px] mt-6 rounded-[50px] shadow-xl" />
+                <button class="absolute w-8 h-8 right-120 top-26" onclick="myFunction()">
+                    <img src="https://img.icons8.com/m_outlined/512/F25081/search.png">
+                </button>
+            </div>
+        </div>
+    </div>
+        <h1 class="p-3">Random photos from pexel b/c airbnb has a private api T_T</h1>
+        <button onclick="getData()">test</button>
+    <!--Content-->
+    <div>
+<<<<<<< HEAD
+        <!--Grid-->
+        <div id="grid-display" class="grid 6 rows 5 cols">
+=======
+        <!--Image-->
+        <div>
+        <img id="test-image">
+>>>>>>> 43f99b900d0c883299477f8b32f985c03e90e3b0
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

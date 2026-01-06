@@ -1,4 +1,5 @@
 const grid = document.getElementById("grid-display");
+document.addEventListener("DOMContentLoaded",getData())
 function myFunction() {
   window.location.href = "test.html";
 }
@@ -19,7 +20,7 @@ function renderCard(data) {
   const image = document.createElement("img");
   const newContent = document.createTextNode(data.author);
   image.src = data.download_url;
-  image.className = "w-[155px] h-[174px] rounded-xl"
+  image.className = "w-[165px] h-[180px] rounded-xl mt-6"
   card.appendChild(image);
   card.appendChild(newContent);
   grid.appendChild(card);

@@ -10,14 +10,18 @@ function goBack() {
 async function getData() {
   const response = await fetch("https://picsum.photos/v2/list");
   const data = await response.json();
-  renderCard(data[1]);
-}
+  console.log(data)
+  data.forEach(element => renderCard(element))
+} 
+
 function renderCard(data) {
   const card = document.createElement("div");
   const image = document.createElement("img");
+  const newContent = document.createTextNode(data.author);
   image.src = data.download_url;
-  image.className = "w-full h-64"
+  image.className = "w-[155px] h-[174px] rounded-xl"
   card.appendChild(image);
+  card.appendChild(newContent);
   grid.appendChild(card);
   
 }
